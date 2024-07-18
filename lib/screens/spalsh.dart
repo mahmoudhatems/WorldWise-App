@@ -17,10 +17,11 @@ class _SpalshState extends State<Spalsh> {
     super.initState();
     Timer(Duration(seconds: splashDuration), () {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (BuildContext context) =>OnboardingPage()),
+        MaterialPageRoute(builder: (BuildContext context) =>const OnboardingPage()),
       );
     });
   }
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Row(
@@ -33,9 +34,9 @@ class _SpalshState extends State<Spalsh> {
             children: [
                 
                Container(
-                    width: 162,
-                    height: 162,
-                    decoration: BoxDecoration(
+                    width: 164,
+                    height: 164,
+                    decoration:const BoxDecoration(
                       image: DecorationImage(
                         image: AssetImage("assets/images/sightseeing (1) 1.png"),
                         fit: BoxFit.fill,
