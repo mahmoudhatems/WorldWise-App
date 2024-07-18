@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:world_wise/screens/spalsh.dart';
+import 'package:world_wise/screens/start.dart';
 
 import 'screens/onboarding.dart';
 
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         "Splash":(context)=>Spalsh(),
-        "OnboardingPage":(context)=>OnboardingPage()
+        "OnboardingPage":(context)=>OnboardingPage(),
+        "Start":(context)=>Start()
         
       },
       initialRoute: "Splash"
