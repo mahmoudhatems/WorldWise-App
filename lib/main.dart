@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:world_wise/screens/spalsh.dart';
 import 'package:world_wise/screens/start.dart';
+import 'package:world_wise/screens/verify_email.dart';
 
 import 'screens/onboarding.dart';
 
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
       routes: {
         "Splash":(context)=>Spalsh(),
         "OnboardingPage":(context)=>OnboardingPage(),
-        "Start":(context)=>Start()
+        "Start":(context)=>Start(),
+        "VerifyEmail":(context)=>VerifyEmail()
         
       },
       initialRoute: "Splash"
