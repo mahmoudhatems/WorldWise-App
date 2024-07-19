@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:world_wise/screens/login.dart';
+import 'package:world_wise/screens/signup.dart';
 import 'package:world_wise/screens/spalsh.dart';
 import 'package:world_wise/screens/start.dart';
 import 'package:world_wise/screens/verify_email.dart';
@@ -20,10 +22,12 @@ class MyApp extends StatelessWidget {
         "Splash":(context)=>Spalsh(),
         "OnboardingPage":(context)=>OnboardingPage(),
         "Start":(context)=>Start(),
-        "VerifyEmail":(context)=>VerifyEmail()
+        "VerifyEmail":(context)=>VerifyEmail(),
         
+        "Signup":(context)=>Signup(),
+        "Login":(context)=>Login()
       },
-      initialRoute: "Splash"
+      initialRoute: "Signup"
       
     );
 }
