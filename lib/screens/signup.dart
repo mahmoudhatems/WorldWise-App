@@ -12,7 +12,7 @@ class Signup extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text(
+        title: const Text(
           "Sign Up",
           style: TextStyle(fontSize: 32, fontWeight: FontWeight.w500),
         ),
@@ -132,31 +132,31 @@ class Signup extends StatelessWidget {
                     )),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             
               children: [
-                SizedBox(width: 20,),
-                Container( 
+                const SizedBox(width: 20,),
+                SizedBox( 
                   height: 56,width: 56,
                   
                   child: Image.asset("assets/images/google.png",),
             
                 ),
-                 Container( 
+                 SizedBox( 
                   height: 56,width: 56,
                   
                   child: Image.asset("assets/images/apple.png",),
             
                 ),
-                 Container( 
+                 SizedBox( 
                   height: 56,width: 56,
                   
                   child: Image.asset("assets/images/facebook.png",),
             
-                ), SizedBox(width: 20,),
+                ), const SizedBox(width: 20,),
               ],
             ),
 
