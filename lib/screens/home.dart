@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
                   Row(mainAxisAlignment: MainAxisAlignment.end, children: [
                     SizedBox(
                       height: 550,
-                      width: 115,
+                      width: 110,
                       child: Image.asset(
                         "assets/images/Ellipse 6.png",
                         fit: BoxFit.fitWidth,
@@ -39,14 +39,14 @@ class HomeScreen extends StatelessWidget {
                           height: 140,
                         ),
                         SizedBox(
-                          height: 168,
+                          height: 165,
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Image.asset(
                                 "assets/images/sightseeing.png",
-                                height: 164,
-                                width: 164,
+                                height: 162,
+                                width: 162,
                               ),
                             ],
                           ),
@@ -55,7 +55,7 @@ class HomeScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              'WorldWise',
+                              'WorldWise\nHomePage ',
                               style: TextStyle(
                                 color: primaryColor,
                                 fontSize: 32,
@@ -70,24 +70,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              const Padding(
-                padding:
-                    EdgeInsets.only(left: 12,right: 12,bottom: 8),
-                child: CoustomButton(
-                    text: "Login",
-                    buttonBorderColor: borderColor,
-                    buttonColor: primaryColor,
-                    textColor: secoundryColor),
-              ),
-              const Padding(
-                padding:
-                    EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                child: CoustomButton(
-                    text: "Login",
-                    buttonBorderColor: primaryColor,
-                    buttonColor: secoundryColor,
-                    textColor: primaryColor),
-              )
+               
             ],
           )
         ],

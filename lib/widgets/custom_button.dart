@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class CoustomButton extends StatelessWidget {
  const CoustomButton(
-      {super.key, this.onTap,this.fontFamily,
+      {super.key, this.onTap,this.fontFamily,this.fontWeight=FontWeight.w500,
       required this.text,
       required this.buttonBorderColor,
       required this.buttonColor,
@@ -15,7 +15,7 @@ class CoustomButton extends StatelessWidget {
   final Color buttonColor;
   final Color buttonBorderColor;
  final String? fontFamily;
-
+final FontWeight?fontWeight;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -35,7 +35,7 @@ mainAxisAlignment: MainAxisAlignment.center,
           Center(
             child: Text(
               text,
-              style: TextStyle(color: textColor, fontSize: 16,fontFamily: fontFamily),
+              style: TextStyle(color: textColor, fontSize: 16,fontFamily: fontFamily,fontWeight: fontWeight),
             ),
           ),
         ]),
