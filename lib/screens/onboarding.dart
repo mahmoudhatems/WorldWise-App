@@ -28,7 +28,7 @@ class OnboardingPage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Column(
                   children: [
-                    Container(
+                    SizedBox(
                       width: 358,
                       height: 748,
                       child: Stack(
@@ -227,7 +227,7 @@ class OnboardingPage extends StatelessWidget {
               child:  Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     'Explore The Beauty \nOf The World!',
                     style: TextStyle(
                       color: Colors.black,
@@ -236,8 +236,8 @@ class OnboardingPage extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  SizedBox(height: 4),
-                  Text(
+                  const SizedBox(height: 4),
+                  const Text(
                     'Enjoy and discover new places around\nthe world with us.',
                     style: TextStyle(
                       color: Colors.black,
@@ -246,7 +246,7 @@ class OnboardingPage extends StatelessWidget {
                       fontWeight: FontWeight.w400,
                     ),
                   ),
-                  SizedBox(height: 24),
+                  const SizedBox(height: 24),
                   Center(
                       child: CoustomButton(
                         onTap:(){
