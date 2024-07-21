@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:world_wise/widgets/Coustom_password_text.dart';
 import 'package:world_wise/widgets/coustom_text_field.dart';
 import 'package:world_wise/widgets/custom_button.dart';
@@ -65,11 +66,14 @@ class Login extends StatelessWidget {
                 CustomPassTextField(
                   mycontroller: TextEditingController(),
                 ),
-              const  Padding(
-                  padding: const EdgeInsets.only(top: 8,bottom: 8),
+                Padding(
+                  padding:  EdgeInsets.only(top: 8,bottom: 8),
                   child: Row( mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Text("Forgot Password? ",style: TextStyle(color:primaryColor,fontSize: 14 ),)
+                      GestureDetector(onTap: (){
+                        Navigator.pushNamed(context, "ForgotPassword");
+                      },
+                        child: Text("Forgot Password? ",style: TextStyle(color:primaryColor,fontSize: 14 ),))
                     ],
                   ),
                 ),
@@ -79,7 +83,7 @@ class Login extends StatelessWidget {
                   padding: EdgeInsets.all(10)),
                 CoustomButton(
                   onTap: () {
-                   // Navigator.pushReplacementNamed(context, "Login");
+                   Navigator.pushReplacementNamed(context, "HomeScreen");
                   },
                   text: "Log In",
                   textColor: backColor,
