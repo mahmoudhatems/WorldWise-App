@@ -3,132 +3,79 @@ import 'package:flutter/material.dart';
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});
 
+  static const List<String> images = [
+    'assets/images/Frame 9.jpg',
+    'assets/images/Frame 5.jpg',
+    'assets/images/Frame 2.jpg',
+    'assets/images/Frame 1.jpg',
+    'assets/images/Frame 6.jpg',
+    'assets/images/Frame 8.jpg',
+    'assets/images/Frame 4.jpg',
+    'assets/images/Frame 10.jpg',
+    'assets/images/Frame 7.jpg',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.only(left: 10, right: 10),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Image.asset("assets/images/Frame 17.png"),
-                  ],
+              child: GridView.builder(
+                itemCount: images.length,
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 3,
+                  crossAxisSpacing: 8.0,
+                  mainAxisSpacing: 8.0,
+                  childAspectRatio: 109 / 217,
+                ),
+                itemBuilder: (context, index) {
+                  return ClipRRect(
+                    borderRadius: BorderRadius.circular(12.0),
+                    child: Image.asset(
+                      images[index],
+                      fit: BoxFit.cover,
+                    ),
+                  );
+                },
+              ),
+            ),
+            const SizedBox(height: 16.0),
+            const Text(
+              'Explore The Beauty Of The World!',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 8.0),
+            const Text(
+              'Enjoy and discover new places around the world with us.',
+              style: TextStyle(
+                fontSize: 16,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 16.0),
+            ElevatedButton(
+              onPressed: () {
+                // Handle button press
+              },
+              child: const Text('Get Started'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                textStyle: const TextStyle(
+                  fontSize: 18,
                 ),
               ),
             ),
-          Container(
-  width: 358,
-  height: 243,
-  clipBehavior: Clip.antiAlias,
-  decoration: ShapeDecoration(
-    color: Colors.white,
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.only(
-        topLeft: Radius.circular(18),
-        topRight: Radius.circular(18),
-      ),
-    ),
-  ),
-  child: Stack(
-    children: [
-      Positioned(
-        left: 16,
-        top: 24,
-        child: Container(
-          height: 195,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                width: 270,
-                height: 118,
-                child: Stack(
-                  children: [
-                    Positioned(
-                      left: 0,
-                      top: 0,
-                      child: Text(
-                        'Explore The Beauty \nOf The World!',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 24,
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.w600,
-                          height: 0,
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      left: 0,
-                      top: 76,
-                      child: Text(
-                        'Enjoy and discover new places around\nthe world with us.',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 14,
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.w400,
-                          height: 0,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 24),
-              Container(
-                width: 326,
-                height: 53,
-                clipBehavior: Clip.antiAlias,
-                decoration: ShapeDecoration(
-                  color: Color(0xFF144CF5),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                ),
-                child: Stack(
-                  children: [
-                    Positioned(
-                      left: 117,
-                      top: 15,
-                      child: GestureDetector(
-                        onTap: () => Navigator.pushReplacementNamed(context,"Start"),
-                        child: Text(
-                          'Get Started',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontFamily: 'Poppins',
-                            fontWeight: FontWeight.w600,
-                            height: 0,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-      Positioned(
-        left: 112,
-        top: 227,
-        child: Container(
-          width: 134,
-          height: 5,
-          child: FlutterLogo(),
-        ),
-      ),
-    ],
-  ),
-)
+            const SizedBox(height: 16.0),
           ],
         ),
       ),

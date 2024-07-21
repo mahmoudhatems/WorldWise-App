@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         "Splash":(context)=>const Spalsh(),
-        "OnboardingPage":(context)=>const OnboardingPage(),
+        "OnboardingPage":(context)=> OnboardingPage(),
         "Start":(context)=>const Start(),
         "VerifyEmail":(context)=>VerifyEmail(),
         "ForgotPassword":(context)=>const ForgotPassword(),
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         "HomeScreen":(context)=>const HomeScreen(),
         "ResetPassword":(context)=>const ResetPassword()
       },
-      initialRoute: "HomeScreen"
+      initialRoute: "OnboardingPage"
       
     );
 }
