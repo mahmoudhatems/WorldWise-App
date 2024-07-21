@@ -10,3 +10,4 @@ const backColor=Color(0xffFFFFFF);
 const deviderColor=Color(0xff9E9E9E);
 const hintTextColor=Color(0xff5B5B5B);
 const borderColor=Color(0xffC4C4C4);
+const arrowBackColor=Color(0xff3B5959);

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:world_wise/screens/forgot_password.dart';
 import 'package:world_wise/screens/home.dart';
 import 'package:world_wise/screens/login.dart';
+import 'package:world_wise/screens/reset_password.dart';
 import 'package:world_wise/screens/signup.dart';
 import 'package:world_wise/screens/spalsh.dart';
 import 'package:world_wise/screens/start.dart';
@@ -29,8 +30,9 @@ class MyApp extends StatelessWidget {
         "Signup":(context)=>Signup(),
         "Login":(context)=>Login(),
         "HomeScreen":(context)=>HomeScreen(),
+        "ResetPassword":(context)=>ResetPassword()
       },
-      initialRoute: "Login"
+      initialRoute: "VerifyEmail"
       
     );
 }
