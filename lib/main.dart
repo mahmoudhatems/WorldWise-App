@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         "HomeScreen":(context)=>const HomeScreen(),
         "ResetPassword":(context)=>const ResetPassword()
       },
-      initialRoute: "Start"
+      initialRoute: "HomeScreen"
       
     );
 }
