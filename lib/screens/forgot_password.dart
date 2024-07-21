@@ -52,7 +52,7 @@ class ForgotPassword extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset("assets/images/Forgot password-cuate (2) 1.png",height:230 ,),
+                  Image.asset("assets/images/Forgot password-cuate (2) 1.png",height:290 ,),
                    const SizedBox(
               height: 30,
             ),

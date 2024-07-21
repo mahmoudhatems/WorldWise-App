@@ -22,17 +22,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        "Splash":(context)=>Spalsh(),
-        "OnboardingPage":(context)=>OnboardingPage(),
-        "Start":(context)=>Start(),
+        "Splash":(context)=>const Spalsh(),
+        "OnboardingPage":(context)=>const OnboardingPage(),
+        "Start":(context)=>const Start(),
         "VerifyEmail":(context)=>VerifyEmail(),
-        "ForgotPassword":(context)=>ForgotPassword(),
-        "Signup":(context)=>Signup(),
-        "Login":(context)=>Login(),
-        "HomeScreen":(context)=>HomeScreen(),
-        "ResetPassword":(context)=>ResetPassword()
+        "ForgotPassword":(context)=>const ForgotPassword(),
+        "Signup":(context)=>const Signup(),
+        "Login":(context)=>const Login(),
+        "HomeScreen":(context)=>const HomeScreen(),
+        "ResetPassword":(context)=>const ResetPassword()
       },
-      initialRoute: "VerifyEmail"
+      initialRoute: "Start"
       
     );
 }
