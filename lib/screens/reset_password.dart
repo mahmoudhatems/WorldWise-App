@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:world_wise/constants.dart';
 import 'package:world_wise/widgets/Coustom_password_text.dart';
-import 'package:world_wise/widgets/coustom_text_field.dart';
 import 'package:world_wise/widgets/custom_button.dart';
 
 class ResetPassword extends StatelessWidget {
@@ -48,7 +47,7 @@ class ResetPassword extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Padding(
@@ -82,9 +81,9 @@ class ResetPassword extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: const Row(
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Row(
                 children: [
                   Text("Confirm Password",
                       style: TextStyle(

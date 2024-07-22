@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:world_wise/widgets/Coustom_password_text.dart';
 import 'package:world_wise/widgets/coustom_text_field.dart';
 import 'package:world_wise/widgets/custom_button.dart';
@@ -67,13 +66,13 @@ class Login extends StatelessWidget {
                   mycontroller: TextEditingController(),
                 ),
                 Padding(
-                  padding:  EdgeInsets.only(top: 8,bottom: 8),
+                  padding:  const EdgeInsets.only(top: 8,bottom: 8),
                   child: Row( mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       GestureDetector(onTap: (){
                         Navigator.pushNamed(context, "ForgotPassword");
                       },
-                        child: Text("Forgot Password? ",style: TextStyle(color:primaryColor,fontSize: 14 ),))
+                        child: const Text("Forgot Password? ",style: TextStyle(color:primaryColor,fontSize: 14 ),))
                     ],
                   ),
                 ),

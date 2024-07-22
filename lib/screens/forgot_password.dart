@@ -46,6 +46,7 @@ class ForgotPassword extends StatelessWidget {
                 ],
               ),
             ),
+            // ignore: prefer_const_constructors
             SizedBox(height: 20,),
             Padding(
               padding: const EdgeInsets.all(8),

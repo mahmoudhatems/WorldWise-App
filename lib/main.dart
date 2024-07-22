@@ -21,18 +21,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       routes: {
         "Splash":(context)=>const Spalsh(),
-        "OnboardingPage":(context)=> OnboardingPage(),
+        "OnboardingPage":(context)=> const OnboardingPage(),
         "Start":(context)=>const Start(),
-        "VerifyEmail":(context)=>VerifyEmail(),
+        "VerifyEmail":(context)=>const VerifyEmail(),
         "ForgotPassword":(context)=>const ForgotPassword(),
         "Signup":(context)=>const Signup(),
         "Login":(context)=>const Login(),
         "HomeScreen":(context)=>const HomeScreen(),
         "ResetPassword":(context)=>const ResetPassword()
       },
-      initialRoute: "OnboardingPage"
+      home: const Spalsh()
       
     );
 }

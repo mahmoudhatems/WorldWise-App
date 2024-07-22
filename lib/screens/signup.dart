@@ -35,7 +35,6 @@ class Signup extends StatelessWidget {
                           style: TextStyle(
                             color: textColor,
                             fontSize: 16,
-                           
                           ))
                     ],
                   ),
@@ -51,7 +50,6 @@ class Signup extends StatelessWidget {
                           style: TextStyle(
                             color: textColor,
                             fontSize: 16,
-                          
                           ))
                     ],
                   ),
@@ -64,18 +62,13 @@ class Signup extends StatelessWidget {
                   child: Row(
                     children: [
                       Text("Password",
-                          style: TextStyle(
-                            color: textColor,
-                            fontSize: 16
-                            
-                          ))
+                          style: TextStyle(color: textColor, fontSize: 16))
                     ],
                   ),
                 ),
                 CustomPassTextField(
                   mycontroller: TextEditingController(),
                 ),
-               
                 const Padding(
                   padding: EdgeInsets.all(12),
                   child: Row(
@@ -84,7 +77,6 @@ class Signup extends StatelessWidget {
                           style: TextStyle(
                             color: textColor,
                             fontSize: 16,
-                            
                           ))
                     ],
                   ),
@@ -92,13 +84,12 @@ class Signup extends StatelessWidget {
                 CustomPassTextField(
                   mycontroller: TextEditingController(),
                 ),
-                const Padding(
-                  padding: EdgeInsets.all(12)),
+                const Padding(padding: EdgeInsets.all(12)),
                 CoustomButton(
                   onTap: () {
                     Navigator.pushReplacementNamed(context, "Login");
                   },
-                  text: "Sign UP",
+                  text: "Sign Up",
                   textColor: backColor,
                   buttonBorderColor: primaryColor,
                   buttonColor: primaryColor,
@@ -135,31 +126,38 @@ class Signup extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-            Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            
-              children: [
-                const SizedBox(width: 20,),
-                SizedBox( 
-                  height: 56,width: 56,
-                  
-                  child: Image.asset("assets/images/google.png",),
-            
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    const SizedBox(
+                      width: 20,
+                    ),
+                    SizedBox(
+                      height: 56,
+                      width: 56,
+                      child: Image.asset(
+                        "assets/images/google.png",
+                      ),
+                    ),
+                    SizedBox(
+                      height: 56,
+                      width: 56,
+                      child: Image.asset(
+                        "assets/images/apple.png",
+                      ),
+                    ),
+                    SizedBox(
+                      height: 56,
+                      width: 56,
+                      child: Image.asset(
+                        "assets/images/facebook.png",
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 20,
+                    ),
+                  ],
                 ),
-                 SizedBox( 
-                  height: 56,width: 56,
-                  
-                  child: Image.asset("assets/images/apple.png",),
-            
-                ),
-                 SizedBox( 
-                  height: 56,width: 56,
-                  
-                  child: Image.asset("assets/images/facebook.png",),
-            
-                ), const SizedBox(width: 20,),
-              ],
-            ),
-
                 const SizedBox(
                   height: 25,
                 ),
@@ -170,18 +168,17 @@ class Signup extends StatelessWidget {
                       child: Text(
                         "Already have an account?",
                         style: TextStyle(
-                          color: textColor,
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500
-                        ),
+                            color: textColor,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500),
                       ),
                     ),
                     GestureDetector(
                       onTap: () {
-                        Navigator.pushNamed(context, "LoginPage");
+                        Navigator.pushReplacementNamed(context, "Login");
                       },
                       child: const Text(
-                        "Log in",
+                        "Log In",
                         style: TextStyle(
                           color: primaryColor,
                           fontSize: 14,

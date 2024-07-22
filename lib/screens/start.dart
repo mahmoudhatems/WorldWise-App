@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:world_wise/constants.dart';
 import 'package:world_wise/widgets/custom_button.dart';
+
 class Start extends StatelessWidget {
   const Start({super.key});
-
 
   @override
   Widget build(BuildContext context) {
@@ -71,29 +70,28 @@ class Start extends StatelessWidget {
                   ),
                 ],
               ),
-               Padding(
-                padding:
-                    const EdgeInsets.only(left: 12,right: 12,bottom: 8),
+              Padding(
+                padding: const EdgeInsets.only(left: 12, right: 12, bottom: 8),
                 child: CoustomButton(
-                  onTap: () {
-                    Navigator.pushReplacementNamed(context, "Login");
-                  },
+                    onTap: () {
+                      Navigator.pushReplacementNamed(context, "Login");
+                    },
                     text: "Login",
                     buttonBorderColor: borderColor,
                     buttonColor: primaryColor,
                     textColor: secoundryColor),
               ),
-               Padding(
+              Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                 child: CoustomButton(
-                   onTap: () {
-                    Navigator.pushReplacementNamed(context, "Signup");
-                  },
+                    onTap: () {
+                      Navigator.pushReplacementNamed(context, "Signup");
+                    },
                     text: "Sign Up",
                     fontWeight: FontWeight.w500,
                     buttonBorderColor: primaryColor,
-                    buttonColor: secoundryColor,
+                    buttonColor: Colors.transparent,
                     textColor: primaryColor),
               )
             ],

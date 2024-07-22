@@ -5,7 +5,7 @@ import 'package:world_wise/constants.dart';
 import 'package:world_wise/widgets/custom_button.dart';
 
 class VerifyEmail extends StatefulWidget {
-  VerifyEmail({super.key});
+  const VerifyEmail({super.key});
 
   @override
   State<VerifyEmail> createState() => _VerifyEmailState();
